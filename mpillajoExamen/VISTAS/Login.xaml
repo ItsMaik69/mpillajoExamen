@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mpillajoExamen.VISTAS.Login"
+             Title="Login">
+    <StackLayout Spacing="20"
+  Padding="25">
+        <Label
+    Text="Sistema de registro de estudiantes"
+    FontSize="20"
+    TextColor="Red"
+    VerticalOptions="Center"
+    HorizontalOptions="Center" />
+
+        <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="USUARIO"
+      FontSize="18"
+      Grid.Row="0"
+      Grid.Column="0"/>
+            <Entry x:Name="txtUsuario"
+      Placeholder="Ingrese el usuario"
+      Grid.Row="0"
+      Grid.Column="1"/>
+            <Label Text="CONTRASEÑA"
+      FontSize="18"
+      Grid.Row="1"
+      Grid.Column="0"/>
+            <Entry x:Name="txtContraseña"
+      Placeholder="Ingrese la contraseña"
+      IsPassword="True"
+      Grid.Row="1"
+      Grid.Column="1"/>
+
+        </Grid>
+        <Button x:Name="btnAbrir" Text="ABRIR"
+    Clicked="btnAbrir_Clicked"/>
+        <Button x:Name="btnAcercade" Text="ACERCA DE"
+    Clicked="btnAcercade_Clicked"/>
+    </StackLayout>
+</ContentPage>
